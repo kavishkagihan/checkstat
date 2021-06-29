@@ -6,7 +6,9 @@ This is a simple tool that allows you to get the responses of different requests
 
 # Installation
 `git clone https://github.com/kavishkagihan/checkstat.git`
+
 `cd checkstat`
+
 `chmod +x checkstat.py`
 
 
@@ -16,28 +18,11 @@ If you are willing to use this tool from any place without using the absolute pa
 
 # Usage
 You can get the help menu with `./checkstat.py -h `
+![image](https://user-images.githubusercontent.com/85458014/123797613-e665d880-d8d5-11eb-8d42-164a0e916f78.png)
 
-`
-Grepping for URLs according to the status code
 
-Usage:
-   checkstat [OPTIONS]
-
-Opions:
-   -f 		Specify a file to read from
-   -s 		Specify a status code (200,403)
-   -t 		Specify the number of threads
-   -p 		Prefer https over http
-   -I 		Enable saving results
-   -H 		Save response header
-   -B 		Save response body
-   -o 		Specify a output directory
-
-If you dont specify a status code to search for,
-it will show all the status codes of the responses.
-
-`
 The most simple usage would be to get the responses of a given url list. By default this will read from stdin, but you can specify a file if you want.
+
 `./checkstat.py -f url_list`
 
 ![image](https://user-images.githubusercontent.com/85458014/123794611-8c174880-d8d2-11eb-9e74-a078060301b5.png)
@@ -65,13 +50,8 @@ Lastly, the most important usage would be to grep for specific status codes. You
 
 ![image](https://user-images.githubusercontent.com/85458014/123796841-15c81580-d8d5-11eb-8c54-2aa3be623706.png)
 
-# Thanks
-This tool was inspired this fff by @tomnomnom. Great thanks goes to him.
-
 # Contact
-Find me,
-  Instagram - @_kavi.gihan
-  Email - iamkavigihan@gmail.com
+Find me, instagram - @_kavi.gihan, email - iamkavigihan@gmail.com
 
 
 
