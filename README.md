@@ -2,7 +2,7 @@
 Grepping for URLs according to the status code
 
 # Descripiton
-This is a simple tool that allows you to get the responses of different requests in a easy way. You can search for specific status codes and save the output as well. 
+This is a simple tool that allows you to get the responses of different requests in an easy way. You can search for specific status codes and save the output as well. 
 
 # Installation
 `git clone https://github.com/kavishkagihan/checkstat.git`
@@ -17,13 +17,14 @@ If you are willing to use this tool from any place without using the absolute pa
 
 `sudo echo "PATH=$PATH:/path/to/the/script" >> ~/.bashrc`
 
+
 # Usage
 You can get the help menu with   `./checkstat.py -h `
 
 ![image](https://user-images.githubusercontent.com/85458014/123798585-d7cbf100-d8d6-11eb-82f7-3e90a427b204.png)
 
 
-The most simple usage would be to get the responses of a given domain list. By default this will read from stdin, but you can specify a file if you want.
+The most simple usage would be to get the responses of a given domain list. By default this will read from stdin, but you can specify a file if you want with `-f` option.
 
 `./checkstat.py -f url_list`
 
@@ -35,6 +36,7 @@ If you look closely, it is using http protocol instead of https. You can force i
 
 If you have a big list of URLs and you want this to done quickly, you can increase the threads with `-t` option.
 And If you want to save the results of this, you can use `-I` options including `-H` and `-B`. However if you want to save the results, you will have specify a output directory with `-o` option.
+
 `./checkstat.py -f hosts -p -I -H -B -o output_directory`
 
 `-H` stands for the headers and `-B` stands for the body. So it will save the headers of the response in .header file and the body in .body file.
@@ -56,6 +58,7 @@ Lastly, the most important usage would be to grep for specific status codes. You
 `cat hosts|./checkstat.py -s 404 -p`
 
 ![image](https://user-images.githubusercontent.com/85458014/123796841-15c81580-d8d5-11eb-8c54-2aa3be623706.png)
+
 
 # Contact
 Find me, instagram - @_kavi.gihan, email - iamkavigihan@gmail.com
