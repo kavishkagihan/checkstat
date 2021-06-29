@@ -15,11 +15,43 @@ This is a simple tool that allows you to get the responses of different requests
 # Adding the script to path
 If you are willing to use this tool from any place without using the absolute path, you will have to add this directory to your path
 
-`sudo echo "PATH=$PATH:/path/to/the/script" > ~/.bashrc`
+`sudo echo "PATH=$PATH:/path/to/the/script" >> ~/.bashrc`
 
 # Usage
-You can get the help menu with  `./checkstat.py -h `
-![image](https://user-images.githubusercontent.com/85458014/123797613-e665d880-d8d5-11eb-8d42-164a0e916f78.png)
+You can get the help menu with   `./checkstat.py -h `
+`
+Grepping for URLs according to the status code
+
+
+Usage:
+
+   checkstat [OPTIONS]
+   
+
+Opions:
+
+   -f 		Specify a file to read from
+   
+   -s 		Specify a status code (200,403)
+   
+   -t 		Specify the number of threads
+   
+   -p 		Prefer https over http
+   
+   -I 		Enable saving results
+   
+   -H 		Save response header
+   
+   -B 		Save response body
+   
+   -o 		Specify a output directory
+   
+
+If you dont specify a status code to search for,
+
+it will show all the status codes of the responses.
+
+`
 
 
 The most simple usage would be to get the responses of a given url list. By default this will read from stdin, but you can specify a file if you want.
