@@ -14,10 +14,11 @@ This is a simple tool that allows you to get the responses of different requests
 
 # Adding the script to path
 If you are willing to use this tool from any place without using the absolute path, you will have to add this directory to your path
+
 `sudo echo "PATH=$PATH:/path/to/the/script" > ~/.bashrc`
 
 # Usage
-You can get the help menu with `./checkstat.py -h `
+You can get the help menu with  `./checkstat.py -h `
 ![image](https://user-images.githubusercontent.com/85458014/123797613-e665d880-d8d5-11eb-8d42-164a0e916f78.png)
 
 
@@ -36,16 +37,21 @@ And If you want to save the results of this, you can use `-I` options including 
 `./checkstat.py -f hosts -p -I -H -B -o output_directory`
 
 `-H` stands for the headers and `-B` stands for the body. So it will save the headers of the response in .header file and the body in .body file.
+
+
 .header file
 ![image](https://user-images.githubusercontent.com/85458014/123796227-6db24c80-d8d4-11eb-8f9b-b6817c6b2065.png)
+
 
 .body file
 ![image](https://user-images.githubusercontent.com/85458014/123796255-760a8780-d8d4-11eb-8d48-c818e24455a1.png)
 
 Also if you want to use multiple tools with a same command, you can get the input from stdin.
+
 `echo google.com|./checkstat.py -p`
 
 Lastly, the most important usage would be to grep for specific status codes. You can do it with `-s`.
+
 `cat hosts|./checkstat.py -s 404 -p`
 
 ![image](https://user-images.githubusercontent.com/85458014/123796841-15c81580-d8d5-11eb-8c54-2aa3be623706.png)
