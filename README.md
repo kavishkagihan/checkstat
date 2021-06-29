@@ -20,7 +20,7 @@ If you are willing to use this tool from any place without using the absolute pa
 # Usage
 You can get the help menu with   `./checkstat.py -h `
 
-![image](https://user-images.githubusercontent.com/85458014/123798404-ab17d980-d8d6-11eb-8cae-e856acbc7cd5.png)
+![image](https://user-images.githubusercontent.com/85458014/123798585-d7cbf100-d8d6-11eb-82f7-3e90a427b204.png)
 
 
 The most simple usage would be to get the responses of a given domain list. By default this will read from stdin, but you can specify a file if you want.
